@@ -11,7 +11,7 @@ public:
         for(int right = 0 ; right <n ; right++){
             freq[s[right] - 'a']++;
 
-            while(freq[0] && freq[1] && freq[2]){
+            while(freq[0]>0 && freq[1]>0 && freq[2]>0){
                 ans += (n - right);
 
                 //now you can shrink the window down
