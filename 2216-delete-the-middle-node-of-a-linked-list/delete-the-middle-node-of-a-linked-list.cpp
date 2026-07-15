@@ -25,7 +25,7 @@ public:
 
         prev->next = slow->next;
         slow->next = nullptr ;
-        // delete[] slow;
+        delete slow;
 
         return head;
     }
